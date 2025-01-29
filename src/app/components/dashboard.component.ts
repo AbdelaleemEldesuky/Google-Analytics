@@ -18,7 +18,6 @@ export class DashboardComponent implements OnInit {
   private loadAnalyticsData(): void {
     this.analyticsService.getPageViews().subscribe(
       (data) => {
-        // Process and display analytics data
         this.anlyticData = data;
       },
       (error) => {

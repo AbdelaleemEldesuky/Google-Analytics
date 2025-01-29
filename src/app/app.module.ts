@@ -8,11 +8,7 @@ import { DashboardComponent } from './components/dashboard.component';
 
 @NgModule({
   declarations: [AppComponent, DashboardComponent],
-  imports: [
-    BrowserModule,
-    HttpClientModule, // Make sure HttpClientModule is imported
-    AppRoutingModule,
-  ],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [AnalyticsService],
   bootstrap: [AppComponent],
 })
