@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:prod": "ng build --configuration production --base-href='https://abdelaleemeldesuky.github.io/Google-Analytics/'",
-    "deploy": "gh-pages -d dist/google-analytics-dashboard"
+    "build:prod": "ng build --configuration production",
+    "deploy": "npm run build:prod && gh-pages -d dist/google-analytics-dashboard"
   },
   "private": true,
   "dependencies": {

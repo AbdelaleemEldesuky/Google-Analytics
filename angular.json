@@ -30,6 +30,8 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/Google-Analytics/",
+              "outputPath": "dist/google-analytics-dashboard",
               "budgets": [
                 {
                   "type": "initial",
