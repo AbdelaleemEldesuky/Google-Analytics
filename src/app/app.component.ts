@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AnalyticsService } from './services/analytics.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'google-analytics-app';
+export class AppComponent implements OnInit {
+  title = 'google-analytics-dashboard';
+
+  constructor(private analyticsService: AnalyticsService) {}
+
+  ngOnInit(): void {
+    this.analyticsService.initializeAnalytics();
+  }
 }

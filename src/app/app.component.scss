@@ -1,0 +1,53 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.navbar-brand i {
+  font-size: 1.5rem;
+}
+
+.nav-link i {
+  font-size: 1.2rem;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.main-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}

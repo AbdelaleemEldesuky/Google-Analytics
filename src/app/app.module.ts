@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AnalyticsService } from './services/analytics.service';
+import { DashboardComponent } from './components/dashboard.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, DashboardComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule, // Make sure HttpClientModule is imported
+    AppRoutingModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [AnalyticsService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
